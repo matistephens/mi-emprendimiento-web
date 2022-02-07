@@ -1,0 +1,15 @@
+.contenido {
+    margin: 20px;
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-area: "contenido__blog"  "contenido__cursos";
+    text-align: center;
+}
+
+@media screen and (min-width: 769px) {
+    .contenido {
+        grid-template-columns: 1fr 1fr;
+        grid-area: "contenido__blog contenido__cursos";
+    }
+}

@@ -1,0 +1,14 @@
+@import 'vendors/scss/bootstrap';
+
+@import 'abstracts/variables';
+
+@import 'base/reset';
+@import 'base/animaciones.scss';
+
+@import 'components/blog';
+@import 'components/cursos';
+@import 'components/footer';
+@import 'components/hero';
+@import 'components/navbar';
+
+@import 'layouts/contenido';

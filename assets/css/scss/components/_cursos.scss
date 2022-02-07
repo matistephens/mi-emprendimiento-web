@@ -1,0 +1,71 @@
+.cursos {
+    margin: 10px;
+    padding: 16px;
+    border: 1px solid $black;
+    text-align: left;
+
+    &__portada {
+        text-align: center;
+
+        &__icons span {
+            margin-right: 12px;
+        }
+
+        &__icons span:last-child {
+            margin-right: 0px;
+        }
+
+        &__description {
+            text-align: justify;
+        }
+
+        &__imagen {
+            border: 1px solid $black;
+            width: 100%;
+            max-width: 180px;
+            border-radius: 50%;
+            object-fit: scale-down;     
+        }
+
+        & > * {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__lista {
+        font-family: $poppins;
+        .list__item {
+            color:#3003ba;
+        }
+
+        .animacion {
+            text-align: center;
+
+            &__imagen {
+                width: 100%;
+                max-width: 200px;
+                margin: 10px;
+
+                .rotacion {
+                    transform-origin: 80% 80%;
+                    animation-name: spin;
+                    animation-duration: 5s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+                }
+                
+                .traslacion {
+                    animation: lateral 1s linear infinite alternate;
+                }
+            }    
+        }
+
+        &__titulo {
+            color: $white;
+            background-color: $sable;
+            text-align: center;
+            padding-top: 1px;
+        }
+    }
+
+}
